@@ -1,10 +1,10 @@
 package ru.netology.graphics.image;
 
 public class Schema implements TextColorSchema {
-    private final char[] textColors = {'#', '$', '@', '%', '*', '+', '-', '\''};
+    private static final char[] TEXT_COLORS = {'#', '$', '@', '%', '*', '+', '-', '\''};
 
     @Override
     public char convert(int color) {
-        return textColors[color / 32];
+        return TEXT_COLORS[color / 32];
     }
 }
